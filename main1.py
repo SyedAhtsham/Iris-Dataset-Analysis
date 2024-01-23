@@ -6,8 +6,6 @@ import pandas as pd
 def load_and_plot():
     # Load the Iris dataset from scikit-learn
     iris = load_iris()
-    print("Shape of the data: ", iris.data.shape)
-    print("Yes")
 
     # Create a DataFrame from the iris data
     df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
@@ -18,6 +16,7 @@ def load_and_plot():
     plt.xlabel("Sepal Length (cm)")
     plt.ylabel("Sepal Width (cm)")
     plt.title("Iris Dataset: Sepal Length vs Sepal Width")
+
     plt.show()
 
 #call the above function
