@@ -16,6 +16,9 @@ def load_and_plot():
     plt.xlabel("Sepal Length (cm)")
     plt.ylabel("Sepal Width (cm)")
     plt.title("Iris Dataset: Sepal Length vs Sepal Width")
+    print("Save the plot as a png file")
+    plt.savefig("Iris_dataset.png")
+
 
     plt.show()
 
