@@ -12,8 +12,7 @@ def load_and_plot():
     # Create a DataFrame from the iris data
     df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
     df['target'] = iris.target
-    print(df.head())
-    print(df.head())
+
     # Scatter plot of sepal_length vs sepal_width
     plt.scatter(df["sepal length (cm)"], df["sepal width (cm)"], c=df['target'], cmap='viridis', edgecolors='k')
     plt.xlabel("Sepal Length (cm)")
